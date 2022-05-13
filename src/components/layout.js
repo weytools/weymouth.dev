@@ -2,6 +2,8 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
+// custom components
+import Navbar from './navbar'
 
 // styles
 
@@ -26,17 +28,9 @@ const Layout = ({ pageTitle, children }) => {
             <meta name="description" content={data.site.siteMetadata.description} />
         </Helmet>
 
-        <div>
-            <header>{data.site.siteMetadata.title}</header>
-            <nav>
-                <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/blog'>Blog</Link></li>
-                </ul>
-            </nav>
+        <div className='bg-slate-800 text-white'>
+            <Navbar></Navbar>
             <main>
-                <h1>{pageTitle}</h1>
                 {children}
             </main>
         </div>

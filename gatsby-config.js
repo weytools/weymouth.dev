@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "src/images/w2.png"
       }
     }, 
     "gatsby-plugin-mdx", 
@@ -35,7 +35,7 @@ module.exports = {
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
+          //optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
           cookie_expires: 0,
         },
