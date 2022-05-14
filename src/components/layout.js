@@ -28,9 +28,9 @@ const Layout = ({ pageTitle, children }) => {
             <meta name="description" content={data.site.siteMetadata.description} />
         </Helmet>
 
-        <div className='bg-slate-800 text-white'>
+        <div className='bg-slate-800 text-white main-bg-image'>
             <Navbar></Navbar>
-            <main>
+            <main className="pt-40">
                 {children}
             </main>
         </div>

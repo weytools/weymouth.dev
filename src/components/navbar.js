@@ -8,7 +8,7 @@ import React from "react"
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-900 bg-opacity-60 backdrop-blur text-white font-inter w-full fixed shadow-md" >
+        <nav className="bg-gray-900 bg-opacity-60 backdrop-blur text-white font-inter w-full fixed shadow-md  z-30" >
             <ul className="max-w-screen-lg mx-auto px-10 flex  space-x-6 items-center ">
                 <li className="justify-self-start shrink-0 w-16">
                     <a href="/">

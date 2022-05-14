@@ -21,10 +21,10 @@ const IndexPage = () => {
 
         <section id="projects" className="space-y-12">
           <h2 className="text-2xl">Projects</h2>
-          <div className="grid grid-cols-4 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-4 gap-x-8 gap-y-10">
             {projectList.map(project => (
-              <article className="bg-slate-500 text-white shadow-md rounded-md col-span-2 px-16">
-                <img className="h-24 rounded-sm object-cover object-center" src={project.image} alt={project.imageAlt}/>
+              <article className="bg-slate-500 text-white shadow-md rounded-md col-span-2 p-12 bg-opacity-50">
+                <img className="h-24 rounded-sm object-cover object-center bg-nicepink bg-opacity-50"  alt={project.imageAlt}/>
                 <h3 className="text-xl">{project.title}</h3>
                 <aside className="text-sm">{project.subtitle}</aside>
                 <p className="text-base" dangerouslySetInnerHTML={getMarkup(project.description)}></p>
